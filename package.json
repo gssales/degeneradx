@@ -1,0 +1,17 @@
+{
+  "name": "degeneradx",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1"
+  },
+  "resolutions": {
+    "degeneradx": "portal:/mnt/c/Users/gssales/Projects/node/degeneradx"
+  }
+}
