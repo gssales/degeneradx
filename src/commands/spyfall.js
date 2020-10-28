@@ -72,6 +72,7 @@ const locales = [
 			'trabalhador passageiro',
 			'estudante passageiro',
 			'vendedor de salgado',
+			'vendendor de ticket',
 		],
 	},
 	{
@@ -111,10 +112,10 @@ module.exports = {
 	description: description,
 	execute(message, _) {
 		const mentions = message.mentions.members.array()
-		if (message.mentions.members.array().length >= 4) {
+		if (mentions.length >= 4) {
 			const spy = Math.floor(Math.random() * mentions.length)
 			const locale = locales[Math.floor(Math.random() * locales.length)]
-			const roles = locale.roles.splice(0)
+			const roles = locale.roles.slice(0)
 
 			mentions.forEach((member, index) => {
 				if (index === spy) {
